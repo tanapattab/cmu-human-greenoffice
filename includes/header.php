@@ -3,6 +3,17 @@
 // (php.ini default_charset) is not UTF-8 — common on older AppServ installs.
 header('Content-Type: text/html; charset=utf-8');
 
+// Set security headers here too, not just via .htaccess - confirmed on
+// production that mod_rewrite/.htaccess is read (clean URLs work) but these
+// headers still don't show up, meaning mod_headers is not enabled there.
+// PHP's header() works regardless of which Apache modules are loaded.
+header('X-Frame-Options: SAMEORIGIN');
+header('X-Content-Type-Options: nosniff');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
+header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
+header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; form-action 'self'");
+
 // Older AppServ builds sometimes ship with mbstring set to auto-convert
 // output encoding (a leftover from TIS-620-era Thai hosting configs).
 // If mbstring is loaded, force it to leave UTF-8 output untouched.
