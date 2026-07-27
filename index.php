@@ -31,7 +31,7 @@ if (file_exists($__inc)) {
                             </div>
 
                             <div class="video-play-button">
-                                <a href="https://www.facebook.com/humancmu/" target="_blank" class="bg-effect" data-cursor-text="ติดตาม">
+                                <a href="https://www.facebook.com/humancmu/" target="_blank" rel="noopener" class="bg-effect" data-cursor-text="ติดตาม">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a>
                                 <p>ติดตามกิจกรรมของเราทาง Facebook</p>

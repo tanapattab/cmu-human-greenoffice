@@ -117,10 +117,10 @@ $goModalSeq = 0;
                                                                             <p><?php echo nl2br(htmlspecialchars($item['result_text'])); ?></p>
                                                                         <?php endif; ?>
                                                                         <?php if ($hasDoc) : ?>
-                                                                            <p><a href="<?php echo htmlspecialchars($item['result_doc_url']); ?>" target="_blank" class="goc-attach-link"><i class="fa-solid fa-file-pdf"></i> เอกสาร (PDF)</a></p>
+                                                                            <p><a href="<?php echo htmlspecialchars(goc_safe_url($item['result_doc_url'])); ?>" target="_blank" rel="noopener" class="goc-attach-link"><i class="fa-solid fa-file-pdf"></i> เอกสาร (PDF)</a></p>
                                                                         <?php endif; ?>
                                                                         <?php if ($hasDocLink) : ?>
-                                                                            <p><a href="<?php echo htmlspecialchars($item['result_doc_link']); ?>" target="_blank" class="goc-attach-link"><i class="fa-solid fa-share-nodes"></i> ลิงก์เอกสารภายนอก</a></p>
+                                                                            <p><a href="<?php echo htmlspecialchars(goc_safe_url($item['result_doc_link'])); ?>" target="_blank" rel="noopener" class="goc-attach-link"><i class="fa-solid fa-share-nodes"></i> ลิงก์เอกสารภายนอก</a></p>
                                                                         <?php endif; ?>
                                                                         <?php if ($hasImages) : ?>
                                                                             <div class="gallery-items goc-gallery">

@@ -117,7 +117,7 @@ $goDocuments = isset($goDocumentsData['items']) ? $goDocumentsData['items'] : []
                                 <?php if ($docUrl) : ?>
                                     <li>
                                         <i class="fa-solid <?php echo $doc['pdf_url'] ? 'fa-file-pdf' : 'fa-share-nodes'; ?>"></i>
-                                        <a href="<?php echo htmlspecialchars($docUrl); ?>" target="_blank"><?php echo htmlspecialchars($doc['title']); ?></a>
+                                        <a href="<?php echo htmlspecialchars(goc_safe_url($docUrl)); ?>" target="_blank" rel="noopener"><?php echo htmlspecialchars($doc['title']); ?></a>
                                     </li>
                                 <?php endif; ?>
                             <?php endforeach; ?>

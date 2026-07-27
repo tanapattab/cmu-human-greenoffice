@@ -120,7 +120,7 @@ if (file_exists($__inc)) {
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A//voc.cmu.ac.th/Choose.aspx" alt="QR Code ระบบรับข้อเสนอแนะ มช.">
                         <h3 style="margin-bottom:8px;">สแกนเพื่อแจ้งข้อเสนอแนะ</h3>
                         <p>ระบบรับข้อเสนอแนะ/ข้อร้องเรียน มหาวิทยาลัยเชียงใหม่ (Voice of Customer)</p>
-                        <p><a href="https://voc.cmu.ac.th/Choose.aspx" target="_blank">https://voc.cmu.ac.th/Choose.aspx</a></p>
+                        <p><a href="https://voc.cmu.ac.th/Choose.aspx" target="_blank" rel="noopener">https://voc.cmu.ac.th/Choose.aspx</a></p>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-8">
@@ -128,7 +128,7 @@ if (file_exists($__inc)) {
                         <i class="fa-brands fa-facebook" style="font-size:64px;color:#1877f2;margin-bottom:14px;display:block;"></i>
                         <h3 style="margin-bottom:8px;">ติดตามข่าวสารทาง Facebook</h3>
                         <p>คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
-                        <p><a href="https://www.facebook.com/humancmu/" target="_blank">https://www.facebook.com/humancmu/</a></p>
+                        <p><a href="https://www.facebook.com/humancmu/" target="_blank" rel="noopener">https://www.facebook.com/humancmu/</a></p>
                     </div>
                 </div>
             </div>

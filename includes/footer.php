@@ -24,8 +24,8 @@
                             <div class="footer-social-links">
                                 <h2>ติดตามเรา:</h2>
                                 <ul>
-                                    <li><a href="https://www.facebook.com/humancmu/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="http://www.human.cmu.ac.th/" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
+                                    <li><a href="https://www.facebook.com/humancmu/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="http://www.human.cmu.ac.th/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
 
     <div id="gocCookieConsent" class="goc-cookie-consent" style="display:none;">
         <div class="goc-cookie-consent-inner">
-            <p>เว็บไซต์นี้ใช้คุกกี้เพื่อเพิ่มประสิทธิภาพในการใช้งานเว็บไซต์ของท่านให้ดียิ่งขึ้น สามารถศึกษารายละเอียดได้ที่ <a href="https://www.cmu.ac.th/th/privacy-policy" target="_blank">นโยบายความเป็นส่วนตัวของมหาวิทยาลัยเชียงใหม่</a></p>
+            <p>เว็บไซต์นี้ใช้คุกกี้เพื่อเพิ่มประสิทธิภาพในการใช้งานเว็บไซต์ของท่านให้ดียิ่งขึ้น สามารถศึกษารายละเอียดได้ที่ <a href="https://www.cmu.ac.th/th/privacy-policy" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัวของมหาวิทยาลัยเชียงใหม่</a></p>
             <button type="button" id="gocCookieAccept" class="btn-default btn-highlighted">ยอมรับ</button>
         </div>
     </div>

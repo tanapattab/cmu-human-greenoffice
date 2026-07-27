@@ -77,7 +77,7 @@ $goVideoItems = isset($goVideosData['items']) ? $goVideosData['items'] : [];
                     <?php foreach ($goVideoItems as $i => $video) : ?>
                         <div class="col-xl-4 col-md-6">
                             <div class="resource-card video-card wow fadeInUp" <?php echo $i > 0 ? 'data-wow-delay="0.' . (($i % 3) * 2) . 's"' : ''; ?>>
-                                <a href="<?php echo htmlspecialchars($video['youtube_url']); ?>" target="_blank" class="video-thumb-wrap" data-cursor-text="Watch">
+                                <a href="<?php echo htmlspecialchars(goc_safe_url($video['youtube_url'])); ?>" target="_blank" rel="noopener" class="video-thumb-wrap" data-cursor-text="Watch">
                                     <img src="<?php echo $video['youtube_thumbnail_url'] ? htmlspecialchars($video['youtube_thumbnail_url']) : 'images/post-1.jpg'; ?>" alt="<?php echo htmlspecialchars($video['title']); ?>">
                                     <span class="video-play-overlay"><i class="fa-solid fa-play"></i></span>
                                 </a>

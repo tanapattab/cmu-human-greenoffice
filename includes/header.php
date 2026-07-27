@@ -39,7 +39,7 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
 	<meta name="description" content="สำนักงานสีเขียว (Green Office) คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่">
 	<meta name="keywords" content="Green Office, สำนักงานสีเขียว, คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่">
 	<meta name="author" content="คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่">
-    <title><?php echo $pageTitle; ?></title>
+    <title><?php echo htmlspecialchars($pageTitle); ?></title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -209,8 +209,8 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
                                         <div class="header-social-links">
                                             <h2>ติดตามเรา</h2>
                                             <ul>
-                                                <li><a href="https://www.facebook.com/humancmu/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                <li><a href="http://www.human.cmu.ac.th/" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
+                                                <li><a href="https://www.facebook.com/humancmu/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                <li><a href="http://www.human.cmu.ac.th/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>

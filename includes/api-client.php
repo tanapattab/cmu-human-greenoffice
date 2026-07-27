@@ -50,3 +50,17 @@ function go_api_get($path, $params = []) {
 
     return $data;
 }
+
+/**
+ * Only lets http(s) URLs through before they're echoed into an href/src.
+ * Backend fields like youtube_url/result_doc_link/external_link are free-text
+ * entered by admins (and, for result_doc_link, category-scoped "responsible"
+ * users) - htmlspecialchars() alone doesn't stop a javascript: URI from being
+ * stored and then executed when a visitor clicks the link.
+ */
+function goc_safe_url($url) {
+    if (!is_string($url) || $url === '') {
+        return '';
+    }
+    return preg_match('~^https?://~i', $url) ? $url : '';
+}
