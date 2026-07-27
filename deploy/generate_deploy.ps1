@@ -21,7 +21,7 @@ param(
     [string]$OutFile = "deploy\deploy_auto.txt",
     [string]$LocalRoot = "D:\AppServ\www\human-greenoffice",
     [string]$RemoteRoot = "/var/www/html",
-    [string]$SiteName = "human.greenoffice"
+    [string]$SiteName = "My Sites/human.greenoffice"
 )
 
 # -c core.quotepath=false: without this, git wraps any filename containing
