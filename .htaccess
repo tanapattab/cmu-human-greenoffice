@@ -1,0 +1,31 @@
+# Block direct web access to .env (API key) and other dotfiles.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Force UTF-8 for this site regardless of the server's global php.ini /
+# Apache defaults. Fixes Thai text showing as mojibake (à¸„à¸“à¸° ...).
+AddDefaultCharset UTF-8
+
+<IfModule mod_php7.c>
+    php_value default_charset "UTF-8"
+    php_flag mbstring.encoding_translation off
+</IfModule>
+<IfModule mod_php.c>
+    php_value default_charset "UTF-8"
+    php_flag mbstring.encoding_translation off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^about/?$ about.php [L,QSA]
+    RewriteRule ^activities/?$ activities.php [L,QSA]
+    RewriteRule ^resources/?$ resources.php [L,QSA]
+    RewriteRule ^documents/?$ documents.php [L,QSA]
+    RewriteRule ^contact/?$ contact.php [L,QSA]
+    RewriteRule ^news/?$ news.php [L,QSA]
+    RewriteRule ^news/([0-9]+)/?$ news-detail.php?id=$1 [L,QSA]
+    RewriteRule ^criteria/?$ criteria-detail.php [L,QSA]
+    RewriteRule ^criteria/([0-9]+)/?$ criteria-detail.php?cat=$1 [L,QSA]
+</IfModule>
