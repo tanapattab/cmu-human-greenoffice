@@ -67,7 +67,7 @@ if (file_exists($__inc)) {
                     <div class="about-us-image-box wow fadeInUp">
                         <div class="about-us-image">
                             <figure class="image-anime">
-                                <img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902030833000000HMA50.jfif" alt="อบรมขับเคลื่อนสำนักงานสีเขียว คณะมนุษยศาสตร์ มช.">
+                                <img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000iIKnX.jpg" alt="อบรมขับเคลื่อนสำนักงานสีเขียว คณะมนุษยศาสตร์ มช.">
                             </figure>
                         </div>
 
@@ -230,7 +230,7 @@ if (file_exists($__inc)) {
                 <div class="col-xl-6">
                     <div class="why-choose-image-box">
                         <div class="why-choose-image-box-1">
-                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000iIKnX.jpg" alt="ฝึกซ้อมหนีไฟและรับมือแผ่นดินไหว"></figure></div>
+                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902030833000000HMA50.jfif" alt="ฝึกซ้อมหนีไฟและรับมือแผ่นดินไหว"></figure></div>
                         </div>
                         <div class="why-choose-image-box-2">
                             <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000i089u.jpg" alt="ฝึกซ้อมหนีไฟและรับมือแผ่นดินไหว"></figure></div>
