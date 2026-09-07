@@ -230,12 +230,12 @@ if (file_exists($__inc)) {
                 <div class="col-xl-6">
                     <div class="why-choose-image-box">
                         <div class="why-choose-image-box-1">
-                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="images/why-choose-image-1.jpg" alt=""></figure></div>
+                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000i089u.jpg" alt="ฝึกซ้อมหนีไฟและรับมือแผ่นดินไหว"></figure></div>
                         </div>
                         <div class="why-choose-image-box-2">
-                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="images/why-choose-image-2.jpg" alt=""></figure></div>
-                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="images/why-choose-image-3.jpg" alt=""></figure></div>
-                            <div class="contact-us-circle"><a href="<?php echo GO_BASE; ?>/contact"><img src="images/contact-us-circle.svg" alt=""></a></div>
+                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000iIKnX.jpg" alt="ฝึกซ้อมหนีไฟและรับมือแผ่นดินไหว"></figure></div>
+                            <div class="why-choose-image"><figure class="image-anime reveal"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902030833000000WHFM8.jfif" alt="อบรมขับเคลื่อนสำนักงานสีเขียว"></figure></div>
+                            <div class="contact-us-circle"><img src="images/green-office-circle-badge.svg" alt="Green Office"></div>
                         </div>
                     </div>
                 </div>
