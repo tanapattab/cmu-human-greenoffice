@@ -5,7 +5,7 @@
                 <div class="col-xl-4">
                     <div class="about-footer">
                         <div class="footer-logo brand-box">
-                            <img class="uni-logo" src="https://www.cmu.ac.th/content/organization/f45789f8-b4ae-46bd-a62a-4ea99608dde9/b9b0cfa4-e046-4baa-ba62-aa8ffeb7ad01.png" alt="โลโก้">
+                            <img class="uni-logo" src="images/humanities-cmu-logo.png" alt="โลโก้">
                             <span class="brand-text"><strong>GREEN OFFICE</strong><span>คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่</span></span>
                         </div>
 
@@ -16,8 +16,8 @@
                         <div class="about-footer-info-box">
                             <div class="footer-info-list">
                                 <ul>
-                                    <li><img src="images/icon-phone-white.svg" alt=""><span>โทรศัพท์: </span><a href="tel:+6653943208">0 5394 3208</a></li>
-                                    <li><img src="images/icon-mail-white.svg" alt=""><span>อีเมล: </span><a href="mailto:humaninfo@cmu.ac.th">humaninfo@cmu.ac.th</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><span>โทรศัพท์: </span><a href="tel:+6653943208">0 5394 3208</a></li>
+                                    <li><i class="fa-solid fa-envelope"></i><span>อีเมล: </span><a href="mailto:humaninfo@cmu.ac.th">humaninfo@cmu.ac.th</a></li>
                                 </ul>
                             </div>
 

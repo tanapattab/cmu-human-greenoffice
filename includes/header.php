@@ -150,7 +150,7 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+			<div id="loading-icon"><i class="fa-solid fa-leaf"></i></div>
 		</div>
 	</div>
 
@@ -159,7 +159,7 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<a class="navbar-brand brand-box" href="<?php echo GO_BASE; ?>/">
-						<img class="uni-logo" src="https://www.cmu.ac.th/content/organization/f45789f8-b4ae-46bd-a62a-4ea99608dde9/b9b0cfa4-e046-4baa-ba62-aa8ffeb7ad01.png" alt="ตราคณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่">
+						<img class="uni-logo" src="images/humanities-cmu-logo.png" alt="ตราคณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่">
 						<span class="brand-text"><strong>GREEN OFFICE</strong><span>คณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่</span></span>
 					</a>
 
@@ -187,14 +187,14 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
 
                         <div class="header-button-box">
                             <div class="header-sidebar-btn">
-                                <button class="btn btn-popup" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="images/header-sidebar-btn.svg" alt=""></button>
+                                <button class="btn btn-popup" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
                                     <div class="offcanvas-body">
                                         <div class="header-contact-box">
-                                            <div class="icon-box"><img src="images/icon-phone-white.svg" alt=""></div>
+                                            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
                                             <div class="header-contact-box-content">
                                                 <h3>โทรศัพท์</h3>
                                                 <p><a href="tel:+6653943208">0 5394 3208</a></p>
@@ -202,7 +202,7 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
                                         </div>
 
                                         <div class="header-contact-box">
-                                            <div class="icon-box"><img src="images/icon-mail-white.svg" alt=""></div>
+                                            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                                             <div class="header-contact-box-content">
                                                 <h3>อีเมล</h3>
                                                 <p><a href="mailto:humaninfo@cmu.ac.th">humaninfo@cmu.ac.th</a></p>
@@ -210,7 +210,7 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
                                         </div>
 
                                         <div class="header-contact-box">
-                                            <div class="icon-box"><img src="images/icon-location-white.svg" alt=""></div>
+                                            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
                                             <div class="header-contact-box-content">
                                                 <h3>ที่อยู่</h3>
                                                 <p>239 ถนนห้วยแก้ว ตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่ 50200</p>

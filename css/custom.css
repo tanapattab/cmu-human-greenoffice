@@ -375,8 +375,25 @@ a:focus{
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	width: 66px;
+	height: 66px;
 	max-width: 66px;
 	transform: translate(-50%, -50%);
+	background-color: var(--accent-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#loading-icon i{
+	font-size: 26px;
+	color: var(--primary-color);
+}
+
+#loading-icon img{
+	width: 100%;
+	max-width: 44px;
 }
 
 @keyframes rotate-loading{
@@ -702,6 +719,11 @@ header.main-header .container-fluid{
 	max-width: 24px;
 }
 
+.header-sidebar-btn .btn-popup i{
+	font-size: 18px;
+	color: var(--primary-color);
+}
+
 body:has(:not(.offcanvas)){
 	padding-right: initial !important;
 }
@@ -810,6 +832,18 @@ body:has(.offcanvas){
 
 .header-contact-box:hover .icon-box img{
 	filter: brightness(0) invert(0);
+}
+
+.header-contact-box .icon-box i{
+	position: relative;
+	font-size: 22px;
+	color: var(--white-color);
+	transition: all 0.4s ease-in-out;
+	z-index: 1;
+}
+
+.header-contact-box:hover .icon-box i{
+	color: var(--primary-color);
 }
 
 .header-contact-box-content h3{
@@ -1131,6 +1165,11 @@ body:has(.offcanvas){
 	margin-bottom: 20px;
 }
 
+.about-us-cta-box .icon-box i{
+	font-size: 16px;
+	color: var(--primary-color);
+}
+
 .about-us-cta-box .icon-box img{
 	width: 100%;
 	max-width: 20px;
@@ -1271,6 +1310,18 @@ body:has(.offcanvas){
 	filter: brightness(0) invert(1);
 }
 
+.about-us-body-item .icon-box i{
+	position: relative;
+	font-size: 20px;
+	color: var(--primary-color);
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+}
+
+.about-us-body-item:hover .icon-box i{
+	color: var(--white-color);
+}
+
 .about-us-body-item-content{
 	width: calc(100% - 65px);
 }
@@ -1407,6 +1458,14 @@ body:has(.offcanvas){
 	position: relative;
 	width: 100%;
 	max-width: 24px;
+	transition: all 0.4s ease-in-out;
+	z-index: 1;
+}
+
+.service-item-box .icon-box i{
+	position: relative;
+	font-size: 20px;
+	color: var(--primary-color);
 	transition: all 0.4s ease-in-out;
 	z-index: 1;
 }
@@ -3186,6 +3245,12 @@ body:has(.offcanvas){
 	width: 100%;
 	max-width: 24px;
 	margin-right: 15px;
+}
+
+.footer-info-list ul li i{
+	font-size: 18px;
+	margin-right: 10px;
+	color: var(--white-color);
 }
 
 .footer-info-list ul li span{
@@ -5402,6 +5467,13 @@ body:has(.offcanvas){
     width: 100%;
     max-width: 24px;
     z-index: 1;
+}
+
+.contact-info-item .icon-box i{
+	position: relative;
+	font-size: 20px;
+	color: var(--primary-color);
+	z-index: 1;
 }
 
 .contact-info-item-content{

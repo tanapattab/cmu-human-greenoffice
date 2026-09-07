@@ -39,21 +39,21 @@ if (file_exists($__inc)) {
 
                         <div class="contact-info-box">
                             <div class="contact-info-item">
-                                <div class="icon-box"><img src="images/icon-phone-primary.svg" alt=""></div>
+                                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
                                 <div class="contact-info-item-content">
                                     <h2>โทรศัพท์ / โทรสาร</h2>
                                     <p><a href="tel:+6653943208">0 5394 3208</a> / 0 5321 1595</p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
-                                <div class="icon-box"><img src="images/icon-mail-primary.svg" alt=""></div>
+                                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                                 <div class="contact-info-item-content">
                                     <h2>อีเมล</h2>
                                     <p><a href="mailto:humaninfo@cmu.ac.th">humaninfo@cmu.ac.th</a></p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
-                                <div class="icon-box"><img src="images/icon-location-primary.svg" alt=""></div>
+                                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
                                 <div class="contact-info-item-content">
                                     <h2>ที่อยู่</h2>
                                     <p>239 ถนนห้วยแก้ว ตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่ 50200</p>

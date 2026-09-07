@@ -72,7 +72,7 @@ if (file_exists($__inc)) {
                         </div>
 
                         <div class="about-us-cta-box">
-                            <div class="icon-box"><img src="images/icon-about-cta.svg" alt=""></div>
+                            <div class="icon-box"><i class="fa-solid fa-people-group"></i></div>
                             <div class="about-rating-content">
                                 <span class="about-rating-star"><i class="fa-solid fa-leaf"></i></span>
                                 <h2>ทุกคนมีส่วนร่วมสร้างสำนักงานสีเขียว</h2>
@@ -106,7 +106,7 @@ if (file_exists($__inc)) {
 
                         <div class="about-us-body wow fadeInUp" data-wow-delay="0.4s">
                             <div class="about-us-body-item">
-                                <div class="icon-box"><img src="images/icon-about-us-body-1.svg" alt=""></div>
+                                <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
                                 <div class="about-us-body-item-content">
                                     <h3>การจัดการพลังงานและทรัพยากร</h3>
                                     <p>ใช้ไฟฟ้า น้ำ และกระดาษอย่างมีประสิทธิภาพและเกิดประโยชน์สูงสุด</p>
@@ -114,7 +114,7 @@ if (file_exists($__inc)) {
                             </div>
 
                             <div class="about-us-body-item">
-                                <div class="icon-box"><img src="images/icon-about-us-body-2.svg" alt=""></div>
+                                <div class="icon-box"><i class="fa-solid fa-seedling"></i></div>
                                 <div class="about-us-body-item-content">
                                     <h3>การสร้างจิตสำนึกด้านสิ่งแวดล้อม</h3>
                                     <p>ส่งเสริมให้บุคลากรและนักศึกษาร่วมอนุรักษ์สิ่งแวดล้อมในชีวิตประจำวัน</p>
@@ -151,19 +151,22 @@ if (file_exists($__inc)) {
             </div>
 
             <div class="row">
-                <?php $goHomeCriteriaCats = isset($goCriteriaData['categories']) ? $goCriteriaData['categories'] : []; ?>
+                <?php
+                $goHomeCriteriaCats = isset($goCriteriaData['categories']) ? $goCriteriaData['categories'] : [];
+                $goServiceIcons = ['fa-clipboard-list', 'fa-bullhorn', 'fa-bolt', 'fa-recycle', 'fa-shield-heart', 'fa-cart-shopping'];
+                ?>
                 <?php if (empty($goHomeCriteriaCats)) : ?>
                     <div class="col-lg-12">
                         <p class="note-text wow fadeInUp" style="text-align:center;">ยังไม่มีข้อมูลเกณฑ์การประเมินในขณะนี้</p>
                     </div>
                 <?php else : ?>
                     <?php foreach ($goHomeCriteriaCats as $i => $cat) : ?>
-                        <?php $catNo = (int) $cat['category_no']; $iconNo = ($i % 6) + 1; ?>
+                        <?php $catNo = (int) $cat['category_no']; $iconClass = $goServiceIcons[$i % 6]; ?>
                         <div class="col-xl-4 col-md-6">
                             <div class="service-item wow fadeInUp" <?php echo ($i % 3) > 0 ? 'data-wow-delay="0.' . (($i % 3) * 2) . 's"' : ''; ?>>
                                 <div class="service-item-box">
                                     <div class="service-item-header">
-                                        <div class="icon-box"><img src="images/icon-service-item-<?php echo $iconNo; ?>.svg" alt=""></div>
+                                        <div class="icon-box"><i class="fa-solid <?php echo $iconClass; ?>"></i></div>
                                         <div class="service-item-content">
                                             <h2><a href="<?php echo GO_BASE; ?>/criteria/<?php echo $catNo; ?>"><?php echo htmlspecialchars($cat['category_name']); ?></a></h2>
                                         </div>
