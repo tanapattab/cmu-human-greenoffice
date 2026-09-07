@@ -36,7 +36,7 @@ $goDocuments = isset($goDocumentsData['items']) ? $goDocumentsData['items'] : []
                 <div class="col-xl-5">
                     <div class="about-us-image-box wow fadeInUp">
                         <div class="about-us-image">
-                            <figure class="image-anime"><img src="https://www.cmu.ac.th/content/organization/f45789f8-b4ae-46bd-a62a-4ea99608dde9/e2f1aef4-d5fb-444b-9cb6-7d061a5ca213.jpg" alt="อาคารคณะมนุษยศาสตร์ มหาวิทยาลัยเชียงใหม่"></figure>
+                            <figure class="image-anime"><img src="https://e-humanities.human.cmu.ac.th/file/GreenOffice/news/20260902031644000000iIKnX.jpg" alt="อบรมขับเคลื่อนสำนักงานสีเขียว คณะมนุษยศาสตร์ มช."></figure>
                         </div>
                     </div>
                 </div>
