@@ -151,108 +151,33 @@ if (file_exists($__inc)) {
             </div>
 
             <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-1.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/1">หมวดที่ 1: การกำหนดนโยบาย การวางแผนการดำเนินงาน และการปรับปรุงอย่างต่อเนื่อง</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/1" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
+                <?php $goHomeCriteriaCats = isset($goCriteriaData['categories']) ? $goCriteriaData['categories'] : []; ?>
+                <?php if (empty($goHomeCriteriaCats)) : ?>
+                    <div class="col-lg-12">
+                        <p class="note-text wow fadeInUp" style="text-align:center;">ยังไม่มีข้อมูลเกณฑ์การประเมินในขณะนี้</p>
+                    </div>
+                <?php else : ?>
+                    <?php foreach ($goHomeCriteriaCats as $i => $cat) : ?>
+                        <?php $catNo = (int) $cat['category_no']; $iconNo = ($i % 6) + 1; ?>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="service-item wow fadeInUp" <?php echo ($i % 3) > 0 ? 'data-wow-delay="0.' . (($i % 3) * 2) . 's"' : ''; ?>>
+                                <div class="service-item-box">
+                                    <div class="service-item-header">
+                                        <div class="icon-box"><img src="images/icon-service-item-<?php echo $iconNo; ?>.svg" alt=""></div>
+                                        <div class="service-item-content">
+                                            <h2><a href="<?php echo GO_BASE; ?>/criteria/<?php echo $catNo; ?>"><?php echo htmlspecialchars($cat['category_name']); ?></a></h2>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-body">
+                                        <div class="service-item-btn">
+                                            <a href="<?php echo GO_BASE; ?>/criteria/<?php echo $catNo; ?>" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-2.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/2">หมวดที่ 2: การสื่อสารและสร้างจิตสำนึก</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/2" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-3.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/3">หมวดที่ 3: การใช้ทรัพยากรและพลังงาน</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/3" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-4.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/4">หมวดที่ 4: การจัดการของเสีย</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/4" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-5.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/5">หมวดที่ 5: สภาพแวดล้อมและความปลอดภัย</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/5" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item-box">
-                            <div class="service-item-header">
-                                <div class="icon-box"><img src="images/icon-service-item-6.svg" alt=""></div>
-                                <div class="service-item-content">
-                                    <h2><a href="<?php echo GO_BASE; ?>/criteria/6">หมวดที่ 6: การจัดซื้อและจัดจ้างที่เป็นมิตรกับสิ่งแวดล้อม</a></h2>
-                                </div>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-btn">
-                                    <a href="<?php echo GO_BASE; ?>/criteria/6" class="btn-default btn-highlighted">อ่านเพิ่มเติม</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
                 <div class="col-lg-12">
                     <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.4s">
                         <p>ศึกษารายละเอียดเกณฑ์การประเมินแต่ละหมวดเพิ่มเติมได้ที่ - <a href="<?php echo GO_BASE; ?>/about#criteria">หน้าเกี่ยวกับสำนักงานสีเขียว</a></p>
@@ -276,7 +201,7 @@ if (file_exists($__inc)) {
                         <div class="why-choose-body wow fadeInUp" data-wow-delay="0.4s">
                             <div class="why-choose-counter-box">
                                 <div class="why-choose-counter-item">
-                                    <h3><span class="counter">6</span></h3>
+                                    <h3><span class="counter"><?php echo (int) $goCategoryCount; ?></span></h3>
                                     <p>หมวดเกณฑ์การประเมินสำนักงานสีเขียว</p>
                                 </div>
                                 <div class="why-choose-counter-item">
@@ -324,39 +249,32 @@ if (file_exists($__inc)) {
                 <div class="col-lg-12">
                     <div class="section-title section-title-center">
                         <span class="section-sub-title wow fadeInUp">กิจกรรมของเรา</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">กิจกรรมสำนักงานสีเขียว (Green Office)</h2>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">การดำเนินงานสำนักงานสีเขียว</h2>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <div class="resource-card wow fadeInUp">
-                        <img src="images/gallery-1.jpg" alt="">
-                        <div class="resource-card-body">
-                            <h3>กิจกรรม 5ส และ Big Cleaning Week</h3>
-                            <p>ปรับปรุงพื้นที่ทำงานให้สะอาด เป็นระเบียบ และปลอดภัยตามหลัก 5ส</p>
-                        </div>
+                <?php
+                $goHomeCampaignData = go_api_get('campaign.php');
+                $goHomeCampaignItems = isset($goHomeCampaignData['items']) ? array_slice($goHomeCampaignData['items'], 0, 3) : [];
+                ?>
+                <?php if (empty($goHomeCampaignItems)) : ?>
+                    <div class="col-lg-12">
+                        <p class="note-text wow fadeInUp" style="text-align:center;">ยังไม่มีสื่อรณรงค์ในขณะนี้</p>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="resource-card wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/gallery-2.jpg" alt="">
-                        <div class="resource-card-body">
-                            <h3>อบรมเกณฑ์การประเมินสำนักงานสีเขียว</h3>
-                            <p>เสริมความรู้ความเข้าใจแก่บุคลากรเกี่ยวกับแนวทางปฏิบัติตามเกณฑ์ทั้ง 6 หมวด</p>
+                <?php else : ?>
+                    <?php foreach ($goHomeCampaignItems as $i => $media) : ?>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="resource-card wow fadeInUp" <?php echo $i > 0 ? 'data-wow-delay="0.' . ($i * 2) . 's"' : ''; ?>>
+                                <img src="<?php echo htmlspecialchars(goc_safe_url($media['image_url'])); ?>" alt="<?php echo htmlspecialchars($media['title']); ?>">
+                                <div class="resource-card-body">
+                                    <h3><?php echo htmlspecialchars($media['title']); ?></h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="resource-card wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/gallery-3.jpg" alt="">
-                        <div class="resource-card-body">
-                            <h3>รณรงค์คัดแยกขยะในหน่วยงาน</h3>
-                            <p>ส่งเสริมการคัดแยกขยะตามประเภทถังสีต่างๆ อย่างถูกต้อง</p>
-                        </div>
-                    </div>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
                 <div class="col-lg-12">
                     <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.4s">
                         <p>ชมภาพกิจกรรมและสื่อรณรงค์เพิ่มเติมได้ที่ - <a href="<?php echo GO_BASE; ?>/activities">หน้าการดำเนินงาน</a></p>
@@ -425,48 +343,34 @@ if (file_exists($__inc)) {
             </div>
 
             <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <div class="post-item wow fadeInUp">
-                        <div class="post-featured-image">
-                            <a href="<?php echo GO_BASE; ?>/news" data-cursor-text="View">
-                                <figure class="image-anime"><img src="images/post-1.jpg" alt=""></figure>
-                            </a>
-                            <div class="post-item-tags"><a href="<?php echo GO_BASE; ?>/news">ตัวอย่างข่าวกิจกรรม</a></div>
-                        </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content"><h2><a href="<?php echo GO_BASE; ?>/news">อบรมเชิงปฏิบัติการ การดำเนินงานตามเกณฑ์สำนักงานสีเขียว</a></h2></div>
-                            <div class="post-item-btn"><a href="<?php echo GO_BASE; ?>/news" class="readmore-btn">อ่านต่อ</a></div>
-                        </div>
+                <?php
+                $goHomeNewsData = go_api_get('news.php', ['page' => 1, 'limit' => 3]);
+                $goHomeNewsItems = isset($goHomeNewsData['items']) ? $goHomeNewsData['items'] : [];
+                ?>
+                <?php if (empty($goHomeNewsItems)) : ?>
+                    <div class="col-lg-12">
+                        <p class="note-text wow fadeInUp" style="text-align:center;">ยังไม่มีข่าวกิจกรรมในขณะนี้</p>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="post-featured-image">
-                            <a href="<?php echo GO_BASE; ?>/news" data-cursor-text="View">
-                                <figure class="image-anime"><img src="images/post-2.jpg" alt=""></figure>
-                            </a>
-                            <div class="post-item-tags"><a href="<?php echo GO_BASE; ?>/news">ตัวอย่างข่าวกิจกรรม</a></div>
+                <?php else : ?>
+                    <?php foreach ($goHomeNewsItems as $i => $news) : ?>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="post-item wow fadeInUp" <?php echo $i > 0 ? 'data-wow-delay="0.' . (($i % 3) * 2) . 's"' : ''; ?>>
+                                <div class="post-featured-image">
+                                    <a href="<?php echo GO_BASE; ?>/news/<?php echo (int) $news['news_id']; ?>" data-cursor-text="View">
+                                        <figure class="image-anime"><img src="<?php echo $news['cover_image_url'] ? htmlspecialchars($news['cover_image_url']) : 'images/post-' . ($i + 1) . '.jpg'; ?>" alt=""></figure>
+                                    </a>
+                                    <?php if (!empty($news['tag_name'])) : ?>
+                                        <div class="post-item-tags"><a href="#"><?php echo htmlspecialchars($news['tag_name']); ?></a></div>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="post-item-body">
+                                    <div class="post-item-content"><h2><a href="<?php echo GO_BASE; ?>/news/<?php echo (int) $news['news_id']; ?>"><?php echo htmlspecialchars($news['title_th']); ?></a></h2></div>
+                                    <div class="post-item-btn"><a href="<?php echo GO_BASE; ?>/news/<?php echo (int) $news['news_id']; ?>" class="readmore-btn">อ่านต่อ</a></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content"><h2><a href="<?php echo GO_BASE; ?>/news">ต้อนรับคณะศึกษาดูงานด้านสำนักงานสีเขียว</a></h2></div>
-                            <div class="post-item-btn"><a href="<?php echo GO_BASE; ?>/news" class="readmore-btn">อ่านต่อ</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="post-featured-image">
-                            <a href="<?php echo GO_BASE; ?>/news" data-cursor-text="View">
-                                <figure class="image-anime"><img src="images/post-3.jpg" alt=""></figure>
-                            </a>
-                            <div class="post-item-tags"><a href="<?php echo GO_BASE; ?>/news">ตัวอย่างข่าวกิจกรรม</a></div>
-                        </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content"><h2><a href="<?php echo GO_BASE; ?>/news">กิจกรรม 5ส Before & After ประจำปี</a></h2></div>
-                            <div class="post-item-btn"><a href="<?php echo GO_BASE; ?>/news" class="readmore-btn">อ่านต่อ</a></div>
-                        </div>
-                    </div>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
-header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; form-action 'self'");
+header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; base-uri 'self'; object-src 'none'; form-action 'self'");
 
 // Older AppServ builds sometimes ship with mbstring set to auto-convert
 // output encoding (a leftover from TIS-620-era Thai hosting configs).
