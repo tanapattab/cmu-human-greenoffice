@@ -78,14 +78,16 @@ $goCategoryCount = isset($goCriteriaData['categories']) ? count($goCriteriaData[
         .footer-logo .brand-box .brand-text{color:#fff}
         .criteria-num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--accent-color);color:var(--primary-color);font-weight:700;font-size:14px;margin-right:8px}
         .waste-bin-list{display:flex;flex-wrap:wrap;gap:24px;margin-top:20px}
-        .waste-bin-item{flex:1 1 260px;background:#fff;border-radius:12px;padding:28px 24px;box-shadow:0 6px 24px rgba(3,22,0,0.08);text-align:center}
+        .waste-bin-item{flex:1 1 200px;background:#fff;border-radius:12px;padding:28px 20px;box-shadow:0 6px 24px rgba(3,22,0,0.08);text-align:center}
         .waste-bin-item .bin-icon{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:26px;color:#fff}
         .bin-green .bin-icon{background:#2ea44f}
         .bin-blue .bin-icon{background:#1e6fd9}
         .bin-yellow .bin-icon{background:#e0b400}
+        .bin-orange .bin-icon{background:#e8730c}
         .bin-red .bin-icon{background:#d9342b}
-        .waste-bin-item h3{font-size:18px;margin-bottom:8px}
-        .waste-bin-item p{font-size:14px;line-height:1.6;margin:0}
+        .waste-bin-item h3{font-size:17px;margin-bottom:4px}
+        .waste-bin-item h3 span{display:block;font-size:12px;font-weight:400;color:rgba(3,22,0,0.55);letter-spacing:.3px}
+        .waste-bin-item p{font-size:13.5px;line-height:1.6;margin:8px 0 0}
         .doc-list{list-style:none;margin:0;padding:0}
         .doc-list li{display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid rgba(3,22,0,0.1);border-radius:10px;margin-bottom:14px;background:#fff}
         .doc-list li i{font-size:20px;color:var(--primary-color);background:var(--accent-color);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}

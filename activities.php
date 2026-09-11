@@ -109,25 +109,30 @@ $goVideoItems = isset($goVideosData['items']) ? $goVideosData['items'] : [];
                 </div>
             </div>
             <div class="waste-bin-list">
-                <div class="waste-bin-item bin-green wow fadeInUp">
-                    <div class="bin-icon"><i class="fa-solid fa-leaf"></i></div>
-                    <h3>ถังสีเขียว</h3>
-                    <p>ขยะเปียก/เศษอาหาร ที่เน่าเสียและย่อยสลายได้เร็ว เช่น เศษอาหาร เปลือกผลไม้ เศษผัก เนื้อสัตว์ ใบไม้แห้ง</p>
-                </div>
-                <div class="waste-bin-item bin-blue wow fadeInUp" data-wow-delay="0.2s">
+                <div class="waste-bin-item bin-blue wow fadeInUp">
                     <div class="bin-icon"><i class="fa-solid fa-trash"></i></div>
-                    <h3>ถังสีน้ำเงิน</h3>
-                    <p>ขยะทั่วไป ย่อยสลายไม่ได้หรือย่อยสลายยาก ไม่คุ้มค่าต่อการรีไซเคิล เช่น ซองขนม กล่องโฟม หลอด ถุงพลาสติก</p>
+                    <h3>ขยะทั่วไป<span>General Waste</span></h3>
+                    <p>เช่น โฟม ซองพลาสติก เศษกระดาษ เปลือกลูกอม ขยะรีไซเคิลไม่ได้ เป็นต้น</p>
                 </div>
-                <div class="waste-bin-item bin-yellow wow fadeInUp" data-wow-delay="0.4s">
+                <div class="waste-bin-item bin-green wow fadeInUp" data-wow-delay="0.15s">
+                    <div class="bin-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>ขยะเปียก<span>Wet Waste</span></h3>
+                    <p>เช่น วัตถุดิบที่เน่าเสียได้ง่าย ผลไม้ ใบไม้ กิ่งไม้ ซากพืช ซากสัตว์ เป็นต้น</p>
+                </div>
+                <div class="waste-bin-item bin-yellow wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bin-icon"><i class="fa-solid fa-recycle"></i></div>
-                    <h3>ถังสีเหลือง</h3>
-                    <p>ขยะรีไซเคิล ที่นำกลับมาใช้ซ้ำหรือแปรรูปได้ เช่น ขวดพลาสติก ขวดแก้ว กระป๋อง กล่องกระดาษ กระดาษ</p>
+                    <h3>ขยะรีไซเคิล<span>Recyclable Waste</span></h3>
+                    <p>เช่น กระดาษ แก้ว โลหะ พลาสติก อลูมิเนียม ขยะที่นำกลับมาผลิตเพื่อใช้ใหม่ได้</p>
+                </div>
+                <div class="waste-bin-item bin-orange wow fadeInUp" data-wow-delay="0.45s">
+                    <div class="bin-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>ขยะอันตราย<span>Hazardous Waste</span></h3>
+                    <p>เช่น หลอดไฟ ถ่านไฟฉาย แบตเตอรี่ กระป๋องสเปรย์ ตลับหมึก เป็นต้น</p>
                 </div>
                 <div class="waste-bin-item bin-red wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="bin-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <h3>ถังสีแดง</h3>
-                    <p>ขยะอันตราย ที่มีสารปนเปื้อนอันตราย เช่น ถ่านไฟฉาย อุปกรณ์อิเล็กทรอนิกส์ ยาหมดอายุ กระป๋องสเปรย์</p>
+                    <div class="bin-icon"><i class="fa-solid fa-biohazard"></i></div>
+                    <h3>ขยะติดเชื้อ<span>Infectious Waste</span></h3>
+                    <p>เช่น หน้ากากอนามัยที่ใช้แล้ว ชุดตรวจ ATK เข็มฉีดยา สำลี ผ้าพันแผล เป็นต้น</p>
                 </div>
             </div>
         </div>
